@@ -1,13 +1,4 @@
-from validaciones import funciones
-(
-    mostrar_menu, validar_contra_vacia, validar_seguridad, contar_tipos_caracteres, buscar_caracter, contra_invertida, generar_reporte, verificar_palindromo) =  
-    ,
-    ,
-    ,
-    ,
-    ,
-    
-)
+from validaciones import *
 
 
 contraseña = input("¡Bienvenidx! Por favor, ingrese su contraseña: ")
