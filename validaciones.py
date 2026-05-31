@@ -1,5 +1,6 @@
-def mostrar_menu() -> None:
-    """
+def mostrar_menu() -> None: #typehints
+    #docstrings/documentacion
+    """ 
     Muestra el menú del programa al usuario,
     para que visualice las opciones disponibles
     """
@@ -116,7 +117,9 @@ def contar_tipos_caracteres(contraseña: str) -> None:
     print(f"********************\nCantidad de letras: {cantidad_letras}\n********************")
     print(f"********************\nCantidad de números: {cantidad_numeros}\n********************")
     print(f"********************\nCantidad de símbolos: {cantidad_simbolos}\n********************")
-    print(f"********************\nCantidad de espacios: {cantidad_espacios}\n********************")
+    print(f"********************\nCantidad de espacios: {cantidad_espacios}\n********************") #dejar dos lineas al menos entre funciones
+
+
 def buscar_caracter(contraseña: str) -> None:
     """
     busca un carácter específico solicitado al usuario
