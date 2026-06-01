@@ -3,6 +3,7 @@ def mostrar_menu() -> None: #typehints
     """ 
     Muestra el menú del programa al usuario,
     para que visualice las opciones disponibles
+
     """
 
     print("***********************************")
@@ -24,7 +25,11 @@ def validar_contra_vacia(contraseña: str) -> str:
     -que no comience con espacios
     -que contenga al menos una letra
 
-    devuelve (return) una contraseña válida.
+    args:
+        contraseña: str, la contraseña ingresada por el usuario
+
+    returns:
+        devuelve una contraseña válida.
 
     """
 
@@ -59,6 +64,10 @@ def validar_contra_vacia(contraseña: str) -> str:
 def validar_seguridad(contraseña: str) -> None:
     """
     verifica si la contraseña es débil, media o fuerte.
+
+    args:
+        contraseña: str, la contraseña ingresada por el usuario
+
     """
     
     solo_letras = True
@@ -100,6 +109,9 @@ def contar_tipos_caracteres(contraseña: str) -> None:
     """
     cuenta la cantidad de letras, números,
     símbolos y espacios de la contraseña
+
+    args:
+        contraseña: str, la contraseña ingresada por el usuario
 
     """
 
@@ -146,6 +158,10 @@ def buscar_caracter(contraseña: str) -> None:
     busca un carácter específico solicitado al usuario
     dentro de la contraseña
     y muestra sus posiciones y cantidad de apariciones
+
+    args:
+        contraseña: str, la contraseña ingresada por el usuario 
+
     """
 
     caracter_buscado = input("Ingrese un carácter: ")
@@ -171,6 +187,9 @@ def contra_invertida(contraseña: str) -> None:
     invierte la contraseña manualmente,
     muestra la contraseña invertida.
 
+    args:
+        contraseña: str, la contraseña ingresada por el usuario
+
     """
 
     invertida = "" #guarda la variable para la contraseña invertida (crea una cadena vacía)
@@ -187,6 +206,9 @@ def generar_reporte(contraseña: str) -> None:
     """
     genera un reporte estadístico de la contraseña:
     longitud, porcentajes y repeticiones consecutivas
+
+    args:
+        contraseña: str, la contraseña ingresada por el usuario
 
     """
 
@@ -250,6 +272,9 @@ def verificar_palindromo(contraseña: str) -> None:
     """
     verifica si la contraseña es un palíndromo
 
+    args:
+        contraseña: str, la contraseña ingresada por el usuario
+
     """
 
     #reutilizo codigo de contra_invertida
@@ -264,6 +289,6 @@ def verificar_palindromo(contraseña: str) -> None:
     if contraseña == invertida:
         print("Las contraseñas se leen igual de derecha a izquierda: es palíndromo")
 
-        
+
     else:
         print("Las contraseñas no se leen igual de derecha a izquierda: no es palíndromo")
