@@ -1,4 +1,4 @@
-from validaciones import *
+from validaciones import contar_tipos_caracteres, generar_reporte, buscar_caracter, contra_invertida, validar_contra_vacia, validar_seguridad, verificar_palindromo, mostrar_menu
 
 
 contraseña = input("¡Bienvenidx! Por favor, ingrese su contraseña: ")
